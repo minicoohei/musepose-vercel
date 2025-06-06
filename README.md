@@ -68,6 +68,19 @@ NEXT_PUBLIC_AWS_REGION=us-east-1
 
 ### Running the Application
 
+#### Quick Start (Recommended)
+Use the automated startup script that handles port conflicts and CORS:
+```bash
+./start_local.sh
+```
+
+This script will:
+- Automatically detect and avoid port conflicts
+- Set up proper CORS configuration
+- Start both Next.js and Streamlit applications
+- Display access URLs when ready
+
+#### Manual Start
 Development mode:
 ```bash
 npm run dev
@@ -79,7 +92,14 @@ npm run build
 npm start
 ```
 
-The application will open at `http://localhost:3000`
+#### Access URLs
+- **Main Application**: http://localhost:3001 (or next available port)
+- **Backend Dashboard**: http://localhost:8503 (or next available port)
+
+#### Port Configuration
+The application automatically detects port conflicts and uses alternative ports:
+- Next.js: 3001, 3002, 3003 (fallback)
+- Streamlit: 8503, 8504, 8505 (fallback)
 
 ## Deployment on Vercel
 
