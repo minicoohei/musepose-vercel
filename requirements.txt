@@ -1,0 +1,8 @@
+streamlit==1.28.1
+requests==2.31.0
+opencv-python==4.8.1.78
+pillow==10.0.1
+yt-dlp==2025.5.22
+replicate==0.15.4
+python-dotenv==1.0.0
+boto3==1.28.85 

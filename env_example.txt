@@ -1,0 +1,21 @@
+# Replicate API Token (必須)
+REPLICATE_API_TOKEN=your_replicate_api_token_here
+
+# AWS S3設定（本番環境で必須）
+AWS_ACCESS_KEY_ID=your_aws_access_key_id
+AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+S3_BUCKET_NAME=your-s3-bucket-name
+AWS_REGION=ap-northeast-1
+
+# 注意事項:
+# 1. S3バケットは事前に作成しておく必要があります
+# 2. バケットはパブリック読み取りアクセスを許可する必要があります
+# 3. IAMユーザーには以下の権限が必要です:
+#    - s3:PutObject
+#    - s3:GetObject
+#    - s3:DeleteObject
+#    - s3:ListBucket
+
+# Flask設定
+FLASK_ENV=development
+FLASK_DEBUG=True 
